@@ -1,0 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'leaflet/dist/leaflet.css';
+@import 'pikaday/css/pikaday';
+@import 'flatpickr/dist/flatpickr.css';
+@import 'sweetalert2/dist/sweetalert2.css';
