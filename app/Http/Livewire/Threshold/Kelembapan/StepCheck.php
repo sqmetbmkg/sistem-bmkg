@@ -20,8 +20,8 @@ class StepCheck extends Component
         $data = Threshold::where('stasiun_id', $id_stasiun)->first();
 
         if ($data) {
-            $this->batasBawah = $data->sc_batasbawah_suspect_tekanan;
-            $this->batasAtas = $data->sc_batasatas_suspect_tekanan;
+            $this->batasBawah = $data->sc_batasbawah_suspect_kelembapan;
+            $this->batasAtas = $data->sc_batasatas_suspect_kelembapan;
         } else {
             $this->resetExcept('id_stasiun');
         }
@@ -35,8 +35,8 @@ class StepCheck extends Component
                     'stasiun_id' => $this->id_stasiun,
                 ],
                 [
-                    'sc_batasatas_suspect_tekanan' => $this->batasAtas,
-                    'sc_batasbawah_suspect_tekanan' => $this->batasBawah
+                    'sc_batasatas_suspect_kelembapan' => $this->batasAtas,
+                    'sc_batasbawah_suspect_kelembapan' => $this->batasBawah
                 ]
             );
             $this->dispatchBrowserEvent('berhasil-menyimpan');

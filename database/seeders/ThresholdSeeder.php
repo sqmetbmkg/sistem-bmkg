@@ -29,8 +29,8 @@ class ThresholdSeeder extends Seeder
                 'rc_batasbawah_suspect_tekanan' => $row[6],
                 'sc_batasatas_suspect_suhu' => 3,
                 'sc_batasbawah_suspect_suhu' => 3,
-                'sc_batasatas_suspect_kelembapan' => 3,
-                'sc_batasbawah_suspect_kelembapan' => 3,
+                'sc_batasatas_suspect_kelembapan' => 10,
+                'sc_batasbawah_suspect_kelembapan' => 10,
                 'sc_batasatas_suspect_tekanan' => 3,
                 'sc_batasbawah_suspect_tekanan' => 3,
             ];
